@@ -91,21 +91,24 @@
 @import 'anadolu/modal';
 @import 'anadolu/advantages-main';
 
+/******************* rbk *******************/
+
+@import 'rbk/main-form';
+
 
 
 
 /******************* it-all-style *******************/
 
 .it-container {
-   max-width: 1200px;
+   max-width: 1036px;
    width: 100%;
    padding: 0 15px;
    margin: 0 auto;
  }
 
-.it-container--min {
-  max-width: 880px;
-
+.it-container--big {
+  max-width: 1246px;
 }
 
 .it-container * {

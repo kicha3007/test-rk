@@ -1,0 +1,48 @@
+section.it-main-form
+	.it-container.it-container--big
+		a(href="#").it-icon
+			.it-icon__img-box
+				img(src="", alt='').it-icon__img
+				.it-icon__text
+					| aviasales
+	.it-container
+		.it-main-form__wrap
+			.it-main-form-title
+				|   Поиск дешевых авиабилетов
+			.it-main-form-subtitle
+				|	Лучший способ купить авиабилеты дешево
+			form.it-main-form__form(action="", method="post")
+				.it-main-form__input-wrap
+					.it-main-form__half
+						input.it-main-form__input(type="text" name='city-from', maxlength='200', value='Москва', placeholder='Москва', required)
+					.it-main-form__half
+						input.it-main-form__input(type="text" name='city-to', maxlength='200', value='', placeholder='Город прибытия', required)
+					.it-main-form__half
+						input.it-main-form__input(type="text" name='time-to', maxlength='200', value='', placeholder='Туда', required)
+					.it-main-form__half
+						input.it-main-form__input(type="text" name='time-back', maxlength='200', value='', placeholder='Обратно', required)
+					.it-main-form__half
+						input.it-main-form__input(type='tel', name='PHONE', maxlength='200', value='', placeholder='Ваш телефон', data-phone='true', required)
+					.it-configurator__form-city-wrap
+						.it-configurator__form-input-city(tabindex='1')
+							input#opt1.it-configurator__form-selectopt(name='test', type='radio', checked='')
+							label.it-configurator__form-label(for='opt1') Москва
+							input#opt2.it-configurator__form-selectopt(name='test', type='radio')
+							label.it-configurator__form-label(for='opt2') Тюмень
+							input#opt3.it-configurator__form-selectopt(name='test', type='radio')
+							label.it-configurator__form-label(for='opt3') Челябинск
+						.it-configurator__form-input-change(data-it-city-change-btn)
+							|    Изменить
+				.it-main-form__half.it-main-form__buttons
+					a(href="").it-btn.it-main-form__btn Найти билеты
+
+				//.it-checkbox-wrap.it-main-form__checkbox-wrap
+				//	label.it-checkbox
+				//		input.it-checkbox__default(type="checkbox" name="AGREE" checked)
+				//		span.it-checkbox__pseudo
+				//		span.it-checkbox__text
+				//			|	Я согласен на обработку персональных данных
+				//	.it-form__success
+				//		| Спасибо!
+				//		br
+				//		|  Ваша заявка принята.
