@@ -266,14 +266,15 @@
   text-align: center;
   user-select: none;
   border: none;
-  padding: 11.5px 10px;
-  font-size: 14px;
+  padding: 18px 10px;
+  font-size: rem(28px);
   transition: all 0.2s ease-in-out;
   background-color: $main-color;
   color: #ffffff;
   cursor: pointer;
   text-decoration: none;
   position: relative;
+  border-radius: 4px;
 }
 
 .it-btn:hover {

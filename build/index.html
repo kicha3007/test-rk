@@ -24,7 +24,11 @@
               <form class="it-main-form__form" action="" method="post">
                 <div class="it-main-form__input-wrap">
                   <div class="it-main-form__half">
-                    <input class="it-main-form__input" type="text" name="city-from" maxlength="200" value="Москва" placeholder="Москва" required>
+                    <input class="it-main-form__input it-main-form__input--color-1 it-main-form__input--border-desktop-1" type="text" name="city-from" maxlength="200" value="Москва" placeholder="Москва" required>
+                    <div class="it-main-form__city-change">
+                      <div class="it-main-form__city-change-text">	MOW</div>
+                      <div class="it-main-form__city-change-img-box"><img class="it-main-form__city-change-img" src="static/img/rbk/main-form/arrow.png" alt=""></div>
+                    </div>
                   </div>
                   <div class="it-main-form__half">
                     <input class="it-main-form__input" type="text" name="city-to" maxlength="200" value="" placeholder="Город прибытия" required>
@@ -39,18 +43,20 @@
                     <div class="it-main-form__passanger-wrap">
                       <div class="it-main-form__passanger-input-wrap" tabindex="1">
                         <input class="it-main-form__passanger-selectopt" id="opt1" name="test" type="radio" checked="">
-                        <label class="it-main-form__passanger-label" for="opt1"><span class="it-main-form__passanger-text">1 пассажир,</span><span class="it-main-form__passanger-text it-main-form__passanger-text--color">	эконом</span></label>
+                        <label class="it-main-form__passanger-label it-main-form__passanger-label--border-desktop-1" for="opt1"><span class="it-main-form__passanger-text">1 пассажир,</span><span class="it-main-form__passanger-text it-main-form__passanger-text--color">	эконом</span></label>
                         <input class="it-main-form__passanger-selectopt" id="opt2" name="test" type="radio">
-                        <label class="it-main-form__passanger-label" for="opt2"><span class="it-main-form__passanger-text">2 пассажира,</span><span class="it-main-form__passanger-text it-main-form__passanger-text--color"></span>   эконом</label>
+                        <label class="it-main-form__passanger-label it-main-form__passanger-label--border-desktop-1" for="opt2"><span class="it-main-form__passanger-text">2 пассажира,</span><span class="it-main-form__passanger-text it-main-form__passanger-text--color"></span>   эконом</label>
                         <input class="it-main-form__passanger-selectopt" id="opt3" name="test" type="radio">
-                        <label class="it-main-form__passanger-label" for="opt3"><span class="it-main-form__passanger-text">1 пассажир,</span><span class="it-main-form__passanger-text it-main-form__passanger-text--color"></span>   бизнес</label>
+                        <label class="it-main-form__passanger-label it-main-form__passanger-label--border-desktop-1" for="opt3"><span class="it-main-form__passanger-text">1 пассажир,</span><span class="it-main-form__passanger-text it-main-form__passanger-text--color"></span>   бизнес</label>
                         <input class="it-main-form__passanger-selectopt" id="opt4" name="test" type="radio">
-                        <label class="it-main-form__passanger-label" for="opt4"><span class="it-main-form__passanger-text">2 пассажира,</span><span class="it-main-form__passanger it-main-form__passanger--color"></span>   бизнес</label>
+                        <label class="it-main-form__passanger-label it-main-form__passanger-label--border-desktop-1" for="opt4"><span class="it-main-form__passanger-text">2 пассажира,</span><span class="it-main-form__passanger-text it-main-form__passanger-text--color"></span>   бизнес</label>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="it-main-form__half it-main-form__buttons"><a class="it-btn it-main-form__btn" href="">Найти билеты</a></div>
+                <div class="it-main-form__buttons-wrap">
+                  <div class="it-main-form__buttons"><a class="it-btn it-main-form__btn" href="">Найти билеты</a></div>
+                </div>
                 <!--.it-checkbox-wrap.it-main-form__checkbox-wrap-->
                 <!--	label.it-checkbox-->
                 <!--		input.it-checkbox__default(type="checkbox" name="AGREE" checked)-->
