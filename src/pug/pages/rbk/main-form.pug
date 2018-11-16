@@ -20,12 +20,18 @@ section.it-main-form
 								|	MOW
 							.it-main-form__city-change-img-box
 								img(src="static/img/rbk/main-form/arrow.png", alt='').it-main-form__city-change-img
-					.it-main-form__half
-						input.it-main-form__input(type="text" name='city-to', maxlength='200', value='', placeholder='Город прибытия', required)
-					.it-main-form__half.it-main-form__half--size-1
-						input.it-main-form__input(type="text" name='time-to', maxlength='200', value='', placeholder='Туда', required)
-					.it-main-form__half.it-main-form__half--size-1
+					.it-main-form__half.it-main-form__half--size-basis-2
+						input.it-main-form__input.it-main-form__input--border-laptop-1(type="text" name='city-to', maxlength='200', value='', placeholder='Город прибытия', required)
+					.it-main-form__half.it-main-form__half--size-1.it-main-form__half--size-basis-1
+						input.it-main-form__input.it-main-form__input--border-laptop-2(type="text" name='time-to', maxlength='200', value='', placeholder='Туда', required)
+						.it-main-form__date-change
+							.it-main-form__date-change-img-box
+								img(src="static/img/rbk/main-form/date.png", alt='').it-main-form__city-change-img
+					.it-main-form__half.it-main-form__half--size-1.it-main-form__half--size-basis-1
 						input.it-main-form__input(type="text" name='time-back', maxlength='200', value='', placeholder='Обратно', required)
+						.it-main-form__date-change
+							.it-main-form__date-change-img-box
+								img(src="static/img/rbk/main-form/date.png", alt='').it-main-form__city-change-img
 					.it-main-form__half.it-main-form__half--size-2
 						.it-main-form__passanger-wrap
 							.it-main-form__passanger-input-wrap(tabindex='1')
@@ -55,7 +61,11 @@ section.it-main-form
 									|    бизнес
 				.it-main-form__buttons-wrap
 					.it-main-form__buttons
-						a(href="").it-btn.it-main-form__btn Найти билеты
+						a(href="").it-btn.it-main-form__btn
+							span.it-main-form__btn-text
+								|	Найти билеты
+							.it-main-form__btn-img-box
+								img(src="static/img/rbk/main-form/aero.png", alt='').it-main-form__btn-img
 
 				//.it-checkbox-wrap.it-main-form__checkbox-wrap
 				//	label.it-checkbox
