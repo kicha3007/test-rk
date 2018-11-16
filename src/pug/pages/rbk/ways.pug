@@ -2,81 +2,105 @@ section.it-ways
 	.it-container
 		.it-ways__decoration
 			.it-ways__decoration-img-box
-				img(src="", alt='').it-ways__decoration-img
+				img(src="static/img/rbk/ways/decoration.png", alt='').it-ways__decoration-img
 		h2.it-all-title
-			| Популярные направления перелетов из города
-			input#change-city.it-ways__change-city(type="text" name='city-change', maxlength='200', value='', placeholder='Москва', required)
-			label.it-ways__change-city-label(for='change-city')
-				.it-ways__change-city-img-box
-					img(src="", alt='').it-ways__change-city-img
+			| Популярные направления перелетов
+			br
+			| из города
+			.it-ways__change-city
+				.it-ways__change-city-input-wrap
+					input#change-city.it-ways__change-city-input(type="text" name='city-change', maxlength='200', value='', placeholder='Москва', required)
+				label.it-ways__change-city-label(for='change-city')
+					.it-ways__change-city-img-box
+						img(src="static/img/rbk/ways/pen.png", alt='').it-ways__change-city-img
 		.it-ways__wrap
 			.it-ways__nav
 				ul.it-ways__nav-list(data-switch-wrap='')
 					li.it-ways__nav-item.active
-						a.it-ways__nav-btn(href='', data-switch='advantages1')
+						a.it-ways__nav-btn(href='', data-switch='ways1')
 							.it-ways__nav-img-box
-								img(src="", alt='').it-ways__nav-img
+								img(src="static/img/rbk/ways/nav/1.png", alt='').it-ways__nav-img
 							.it-ways__nav-text
 								|    Куда
 								| Угодно
+					li.it-ways__nav-item
+						a.it-ways__nav-btn(href='', data-switch='ways1')
+							.it-ways__nav-img-box
+								img(src="static/img/rbk/ways/nav/2.png", alt='').it-ways__nav-img
+							.it-ways__nav-text
+								|    CОЛНЦЕ
+								| И МОРЕ
+					li.it-ways__nav-item
+						a.it-ways__nav-btn(href='', data-switch='ways1')
+							.it-ways__nav-img-box
+								img(src="static/img/rbk/ways/nav/3.png", alt='').it-ways__nav-img
+							.it-ways__nav-text
+								|    ШОПИНГ
+								| ГОРОД
+					li.it-ways__nav-item
+						a.it-ways__nav-btn(href='', data-switch='ways1')
+							.it-ways__nav-img-box
+								img(src="static/img/rbk/ways/nav/4.png", alt='').it-ways__nav-img
+							.it-ways__nav-text
+								|    КУЛЬТУРА
+								| И ИСТОРИЯ
+					li.it-ways__nav-item
+						a.it-ways__nav-btn(href='', data-switch='ways1')
+							.it-ways__nav-img-box
+								img(src="static/img/rbk/ways/nav/5.png", alt='').it-ways__nav-img
+							.it-ways__nav-text
+								|    НОЧНАЯ
+								| ЖИЗНЬ
+					li.it-ways__nav-item
+						a.it-ways__nav-btn(href='', data-switch='ways1')
+							.it-ways__nav-img-box
+								img(src="static/img/rbk/ways/nav/6.png", alt='').it-ways__nav-img
+							.it-ways__nav-text
+								|    Отдых
+								| С ДЕТЬМИ
 			ul.it-ways__list(data-tabs-wrap='')
-				li.it-ways__item.active(data-tab='advantages1')
+				li.it-ways__item.active(data-tab='ways1')
 					.it-ways__half.it-ways__half--left
 						.it-ways__img-box
-							img.it-ways__img(src='/wp-content/themes/divi-child-s-master/img/seo/advantages-seo/1.png', alt='')
+							img.it-ways__img(src='static/img/rbk/ways/content/1.jpg', alt='')
+						.it-ways__bottom
+							.it-ways__bottom-half.it-ways__bottom-half--left
+								.it-ways__bottom-img-box
+									img.it-ways__bottom-img(src="static/img/rbk/ways/flag.png", alt='')
+								.it-ways__bottom-info
+									.it-ways__bottom-city
+										| Краснодар
+									.it-ways__bottom-country
+										|	РОССИЯ
+							.it-ways__bottom-half.it-ways__bottom-half--right
+								.it-ways__bottom-price
+									span.it-ways__bottom-price-text
+										|	Найти от
+									span.it-ways__bottom-price-number
+										|	1 212
+									span.it-ways__bottom-price-text
+										|	&#8381
+								.it-ways__bottom-date
+									|	18 марта
 					.it-ways__half.it-ways__half--right
-						.it-ways__content
-							h3.it-ways__title
-								| Неограниченный список ключевых фраз
-							.it-ways__desc
-								| Ваш продукт могут искать сотнями разных способов. И мы сделаем так, чтобы нашли.
-				li.it-ways__item(data-tab='advantages2')
-					.it-ways__half.it-ways__half--left
 						.it-ways__img-box
-							img.it-ways__img(src='/wp-content/themes/divi-child-s-master/img/seo/advantages-seo/2.png', alt='')
-					.it-ways__half.it-ways__half--right
-						.it-ways__content
-							h3.it-ways__title
-								| Трафик по приоритетным продуктам
-							.it-ways__desc
-								| Мы следим за объемом и структурой трафика. Приоритетные направления получают
-								| трафик раньше и больше, чтобы сразу начать окупать продвижение.
-				li.it-ways__item(data-tab='advantages3')
-					.it-ways__half.it-ways__half--left
-						.it-ways__img-box
-							img.it-ways__img(src='/wp-content/themes/divi-child-s-master/img/seo/advantages-seo/3.png', alt='')
-					.it-ways__half.it-ways__half--right
-						.it-ways__content
-							h3.it-ways__title
-								| Конверсионные
-								| страницы
-							.it-ways__desc
-								| Анализируем ваши продукты и компанию, конкурентов, полностью перестраиваем
-								| систему убеждения, чтобы страницы не просто получали трафик, а конвертировали
-								| его в клиентов.
-
-							li.it-ways__item(data-tab='advantages5')
-								.it-ways__half.it-ways__half--left
-									.it-ways__img-box
-										img.it-ways__img(src='/wp-content/themes/divi-child-s-master/img/seo/advantages-seo/5.png', alt='')
-								.it-ways__half.it-ways__half--right
-									.it-ways__content
-										h3.it-ways__title
-											| Продающие тексты
-										.it-ways__desc
-											| Мы не пишем «сеошные тексты» и не используем нечестные маркетинговые приемы. Мы
-											| последовательно и аргументированно рассказываем, чем ваш продукт лучше, не
-											| создавая при этом завышенных ожиданий.
-
-							li.it-ways__item(data-tab='advantages6')
-								.it-ways__half.it-ways__half--left
-									.it-ways__img-box
-										img.it-ways__img(src='/wp-content/themes/divi-child-s-master/img/seo/advantages-seo/6.png', alt='')
-								.it-ways__half.it-ways__half--right
-									.it-ways__content
-										h3.it-ways__title
-											| Качественные ссылки и
-											| крауд-маркетинг
-										.it-ways__desc
-											| Сформируем пул естественных ссылок,
-											| полезных при продвижении.
+							img.it-ways__img(src='static/img/rbk/ways/content/2.jpg', alt='')
+						.it-ways__bottom
+							.it-ways__bottom-half.it-ways__bottom-half--left
+								.it-ways__bottom-img-box
+									img.it-ways__bottom-img(src="static/img/rbk/ways/flag.png", alt='')
+								.it-ways__bottom-info
+									.it-ways__bottom-city
+										| Сочи (Адлер)
+									.it-ways__bottom-country
+										|    РОССИЯ
+							.it-ways__bottom-half.it-ways__bottom-half--right
+								.it-ways__bottom-price
+									span.it-ways__bottom-price-text
+										|    Найти от
+									span.it-ways__bottom-price-number
+										|    1 334
+									span.it-ways__bottom-price-text
+										|    &#8381
+								.it-ways__bottom-date
+									|    27 марта

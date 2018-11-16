@@ -157,12 +157,12 @@
 
 .it-all-title {
   text-align: center;
-  padding-top: 60px;
+  padding-top: 30px;
   padding-bottom: 40px;
-  font-size: rem(32px);
-  line-height: 1.4;
+  font-size: rem(24px);
+  line-height: 1.5;
   position: relative;
-  color: #000000;
+  color: #4A4A4A;
   margin: 0;
   overflow: hidden;
   font-weight: 700;
@@ -263,6 +263,7 @@
   min-height: 100%;
   margin-bottom: -103px;*/
   overflow: hidden;
+  background-color: rgba(249, 252, 255, 1);
 }
 
 .it-btn {
