@@ -1,0 +1,213 @@
+@import "../__vars";
+@import "../__mixins";
+@import "../smart-grid";
+
+/******************* it-ways *******************/
+
+.it-ways__nav {
+  margin-bottom: 40px;
+}
+
+.it-ways__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 34px;
+  padding-bottom: 0;
+  line-height: 1.3;
+}
+
+.it-ways__nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 0 -20px;
+  list-style-type: none;
+  counter-reset: advantages-seoCounter;
+}
+
+.it-ways__nav-item {
+  font-size: 0.88rem;
+  width: 100%;
+  margin: 0 0 20px;
+  position: relative;
+  max-width: 71px;
+}
+
+.it-ways__nav-item:before {
+  content: counter(advantages-seoCounter);
+  counter-increment: advantages-seoCounter;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 17px;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  font-size: 1.13rem;
+  color: #ffffff;
+  pointer-events: none;
+}
+
+.it-ways__nav-item:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  background: url("/wp-content/themes/divi-child-s-master/img/strategy/btn-arrow.png") no-repeat center;
+  transform: scale(1);
+  pointer-events: none;
+}
+
+.it-ways__nav-item:not(.active):before {
+  color: #2196F3;
+}
+
+.it-ways__nav-item:not(.active):after {
+  background: url("/wp-content/themes/divi-child-s-master/img/seo/arrow.png") no-repeat center;
+}
+
+.it-ways__nav-btn {
+  padding: 17px 10px 17px 60px;
+  min-height: 71px;
+
+  display: inline-flex;
+  align-items: center;
+  text-align: left;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #2196F3;
+
+}
+
+.it-ways__nav-item:not(.active) .it-ways__nav-btn {
+  color: rgba(80, 74, 74, 0.5);
+  background-color: #F6F6F6;
+  font-weight: 400;
+  border-radius: 50px;
+  box-shadow: none;
+}
+
+.it-ways__nav-link:hover,
+.it-ways__nav-link:active,
+.it-ways__nav-link:visited {
+  text-decoration: none;
+  color: #9FA3B0;
+}
+
+.it-ways__list {
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.it-ways__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 300px;
+}
+
+.it-ways__half {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 50%;
+  min-width: 300px;
+  flex-grow: 1;
+  position: relative;
+}
+
+.it-ways__half--left:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 1px;
+  height: 214px;
+  margin-top: -107px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.it-ways__img-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  max-width: 260px;
+  width: 100%;
+  height: 260px;
+  box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+}
+
+.it-ways__half--right {
+  padding: 50px 30px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.it-ways__content {
+  color: #363636;
+  line-height: 1.3;
+  max-width: 370px;
+  width: 100%;
+}
+
+.it-ways__desc {
+  font-size: 1.125rem;
+  position: relative;
+  line-height: 1.2;
+  color: rgba(0, 0, 0, 0.5);
+
+}
+
+.it-ways__subtitle:before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.it-ways__phone {
+  font-weight: 300;
+  font-size: 2.25rem;
+  margin-bottom: 50px;
+  padding-left: 60px;
+  position: relative;
+}
+
+.it-ways__phone:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 31px;
+  height: 31px;
+  margin-top: -15px;
+  background: url("images/shop/phone-icon.png") no-repeat center;
+}
+
+.it-ways__buttons {
+  max-width: 205px;
+  width: 100%;
+}
+
+.it-ways__item:not(.active ) {
+  display: none;
+}
+
+.it-ways__btn:before {
+  right: 28px;
+}

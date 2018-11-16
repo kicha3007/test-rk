@@ -95,6 +95,14 @@
 
 @import 'rbk/main-form';
 @import 'rbk/icon';
+@import 'rbk/ways';
+@import 'rbk/all-info';
+@import 'rbk/mobile';
+@import 'rbk/partners';
+@import 'rbk/prices';
+@import 'rbk/social';
+@import 'rbk/footer';
+
 
 
 
@@ -116,24 +124,24 @@
   box-sizing: border-box;
 }
 
-.it-container--full {
+//.it-container--full {
+//  @include phones {
+//    max-width: 100%;
+//    padding: 0;
+//  }
+//}
+
+
+//.it-container--tablets-full {
+//  @include tablets {
+//    max-width: 100%;
+//    padding: 0;
+//  }
+//}
+
+.it-container--size-mobile {
   @include phones {
-    max-width: 100%;
-    padding: 0;
-  }
-}
-
-
-.it-container--tablets-full {
-  @include tablets {
-    max-width: 100%;
-    padding: 0;
-  }
-}
-
-.it-container--mobile {
-  @include phones {
-    max-width: 290px;
+    max-width: 340px;
   }
 }
 
@@ -261,12 +269,12 @@
   display: inline-block;
   vertical-align: middle;
   width: 100%;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 1.25;
   text-align: center;
   user-select: none;
   border: none;
-  padding: 18px 10px;
+  padding: 15px 10px;
   font-size: rem(28px);
   transition: all 0.2s ease-in-out;
   background-color: $main-color;
@@ -275,6 +283,10 @@
   text-decoration: none;
   position: relative;
   border-radius: 4px;
+  @include phones {
+    padding: 11px 10px;
+    font-size: 24px;
+  }
 }
 
 .it-btn:hover {

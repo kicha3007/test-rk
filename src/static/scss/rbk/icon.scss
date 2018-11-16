@@ -38,4 +38,8 @@
 
 .it-icon__text {
   color: #ffffff;
+  font-size: 20px;
+  @include phones {
+    display: none;
+  }
 }
