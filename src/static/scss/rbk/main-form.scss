@@ -6,25 +6,28 @@
 
 .it-main-form {
   background: linear-gradient(110deg, #00B0DE  0%, #01AEDC 3.7%, #02ABDB 7.44%, #02ABDB 11.16%, #02ABDB 11.38%, #196EBD 100%);
+  padding-top: 12px;
 }
 
 .it-main-form__wrap {
   overflow: hidden;
-  padding: 4% 0;
+  padding: 19% 0;
 }
 
 .it-main-form-title {
-  font-size: rem(36px);
-  margin-bottom: 20px;
+  font-size: rem(48px);
+  margin-bottom: 5px;
   text-align: center;
   color: #ffffff;
+  font-weight: 700;
 }
 
 .it-main-form-subtitle {
-  font-size: rem(18px);
+  font-size: rem(24px);
   text-align: center;
   color: #ffffff;
-  margin-bottom: 35px;
+  margin-bottom: 40px;
+  font-weight: 700;
 }
 
 .it-main-form__form {
@@ -32,15 +35,6 @@
   box-sizing: content-box;
 }
 
-.it-main-form__input-title {
-  font-size: 14px;
-  font-weight: 300;
-  color: rgba(0, 0, 0, 0.87);
-  margin-bottom: 15px;
-  margin-top: 10px;
-
-  min-height: 19px;
-}
 
 .it-main-form__input-wrap {
   display: -webkit-box;
@@ -54,7 +48,7 @@
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  margin: 0 -10px 0;
+  margin: 0 -2px 0;
   overflow: hidden;
 }
 
@@ -62,23 +56,30 @@
   flex-grow: 1;
   flex-basis: 190px;
   width: 100%;
-  margin: 0 10px 25px;
-  max-width: 240px;
+  margin: 0 2px 25px;
+  max-width: 224px;
   @include phones {
       max-width: 250px;
       flex-basis: 250px;
   }
 }
 
+.it-main-form__half--size-1 {
+  max-width: 180px;
+}
 
-.it-configurator__form-city-wrap {
+.it-main-form__half--size-2 {
+  max-width: 212px;
+}
+
+
+.it-main-form__passanger-input-wrap {
   position: relative;
   width: 100%;
   display: flex;
 }
 
-
-.it-configurator__form-input-city {
+.it-configurator__passanger-input-wrap {
   display:flex;
   flex-direction: column;
   position:relative;
@@ -89,7 +90,7 @@
   outline: none;
 }
 
-.it-configurator__form-label {
+.it-main-form__passanger-label {
   padding:0 30px 0 10px;
   min-height:40px;
   display:flex;

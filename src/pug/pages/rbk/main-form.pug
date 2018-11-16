@@ -2,9 +2,9 @@ section.it-main-form
 	.it-container.it-container--big
 		a(href="#").it-icon
 			.it-icon__img-box
-				img(src="", alt='').it-icon__img
-				.it-icon__text
-					| aviasales
+				img(src="static/img/rbk/main-form/icon.png", alt='').it-icon__img
+			.it-icon__text
+				| aviasales
 	.it-container
 		.it-main-form__wrap
 			.it-main-form-title
@@ -17,22 +17,33 @@ section.it-main-form
 						input.it-main-form__input(type="text" name='city-from', maxlength='200', value='Москва', placeholder='Москва', required)
 					.it-main-form__half
 						input.it-main-form__input(type="text" name='city-to', maxlength='200', value='', placeholder='Город прибытия', required)
-					.it-main-form__half
+					.it-main-form__half.it-main-form__half--size-1
 						input.it-main-form__input(type="text" name='time-to', maxlength='200', value='', placeholder='Туда', required)
-					.it-main-form__half
+					.it-main-form__half.it-main-form__half--size-1
 						input.it-main-form__input(type="text" name='time-back', maxlength='200', value='', placeholder='Обратно', required)
-					.it-main-form__half
-						input.it-main-form__input(type='tel', name='PHONE', maxlength='200', value='', placeholder='Ваш телефон', data-phone='true', required)
-					.it-configurator__form-city-wrap
-						.it-configurator__form-input-city(tabindex='1')
-							input#opt1.it-configurator__form-selectopt(name='test', type='radio', checked='')
-							label.it-configurator__form-label(for='opt1') Москва
-							input#opt2.it-configurator__form-selectopt(name='test', type='radio')
-							label.it-configurator__form-label(for='opt2') Тюмень
-							input#opt3.it-configurator__form-selectopt(name='test', type='radio')
-							label.it-configurator__form-label(for='opt3') Челябинск
-						.it-configurator__form-input-change(data-it-city-change-btn)
-							|    Изменить
+					.it-main-form__half.it-main-form__half--size-2
+						.it-main-form__passanger-wrap
+							.it-main-form__passanger-input-wrap(tabindex='1')
+								input#opt1.it-main-form__passanger-selectopt(name='test', type='radio', checked='')
+								label.it-main-form__passanger-label(for='opt1')
+									span.it-main-form__passanger-text
+										| 1 пассажир,
+									span.it-main-form__passanger.it-main-form__passanger--color
+										|	эконом
+								input#opt2.it-main-form__passanger-selectopt(name='test', type='radio')
+								label.it-main-form__passanger-label(for='opt2')
+									span.it-main-form__passanger-text
+										| 2 пассажир,
+									span.it-main-form__passanger.it-main-form__passanger--color
+									|    эконом
+								input#opt3.it-main-form__passanger-selectopt(name='test', type='radio')
+								label.it-main-form__passanger-label(for='opt3')
+									span.it-main-form__passanger-text
+										| 1 пассажир,
+									span.it-main-form__passanger.it-main-form__passanger--color
+										|    бизнес
+							//.it-configurator__form-input-change(data-it-city-change-btn)
+							//	|    Изменить
 				.it-main-form__half.it-main-form__buttons
 					a(href="").it-btn.it-main-form__btn Найти билеты
 
