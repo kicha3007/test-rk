@@ -93,7 +93,6 @@
 .it-social__form {
   max-width: 330px;
   width: 100%;
-  display: inline-block;
   flex-basis: 200px;
   flex-grow: 1;
 
@@ -103,6 +102,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
+  align-items: flex-start;
   @include tablets {
     justify-content: center;
   }
