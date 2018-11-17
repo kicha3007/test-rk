@@ -252,6 +252,9 @@
   @include laptop {
     width: 100%;
   }
+  @include tablets {
+      width: auto;
+  }
 }
 
 .it-ways__bottom-city {

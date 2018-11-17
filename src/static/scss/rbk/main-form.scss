@@ -85,6 +85,7 @@
   @include tablets {
     max-width: calc(50% - 1px);
     flex-basis: 265px;
+
   }
   @include phones {
     max-width: 308px;
@@ -122,8 +123,6 @@
 .it-main-form__half--size-basis-2 {
   flex-basis: 150px;
 }
-
-
 
 .it-main-form__city-change {
   position: absolute;
@@ -279,7 +278,6 @@
 .it-main-form__passanger-input-wrap:focus .it-main-form__passanger-label {
   position: relative;
   pointer-events: all;
-
 }
 
 .it-main-form__passanger-selectopt {
@@ -289,7 +287,6 @@
   flex-basis: 90px;
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .it-main-form__passanger-selectopt:checked + label {
@@ -300,12 +297,6 @@
 
 .it-main-form__passanger-text + .it-main-form__passanger-text {
   margin-left: 4px;
-}
-
-.it-main-form__passanger-text {
-
-
-
 }
 
 .it-main-form__passanger-text--color {

@@ -114,6 +114,12 @@
    width: 100%;
    padding: 0 15px;
    margin: 0 auto;
+  @include tablets {
+    max-width: 654px;
+  }
+  @include phones {
+    max-width: 338px;
+  }
  }
 
 .it-container--big {
@@ -139,11 +145,9 @@
 //  }
 //}
 
-.it-container--size-mobile {
-  @include phones {
-    max-width: 340px;
-  }
-}
+
+
+
 
 //.it-container--big {
 //  max-width: 1920px;
@@ -374,7 +378,7 @@
   }
 }
 
-@media (max-width: 720px) { /* tablets*/
+@media (max-width: 768px) { /* tablets*/
   html {
     font-size: 14px;
   }
