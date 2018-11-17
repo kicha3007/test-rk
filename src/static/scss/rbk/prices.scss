@@ -3,7 +3,13 @@
 @import "../smart-grid";
 
 .it-prices {
-  margin-bottom: 80px;
+  margin-bottom: 100px;
+  @include tablets {
+    margin-bottom: 90px;
+  }
+  @include phones {
+    margin-bottom: 40px;
+  }
 }
 
 .it-prices__decoration {
@@ -67,7 +73,7 @@
   }
 }
 
-.it-prices__half:last-child:before {
+.it-prices__half:last-child:after {
   display: none;
 }
 
@@ -87,7 +93,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 0 18px 10px 0;
+  margin: 0 10px 10px 0;
 }
 
 .it-prices__title-img {
@@ -111,6 +117,7 @@
   color: #A0B0B9;
   font-size: 12px;
   font-weight: 500;
+  text-transform: uppercase;
 }
 
 .it-prices__price-inner-wrap span {
@@ -139,6 +146,27 @@
   }
 
 }
+
+.it-prices__info {
+  margin-top: 80px;
+  @include tablets {
+    margin-top: 40px;
+  }
+}
+
+.it-prices__info-title {
+  text-align: center;
+  color: #4A4A4A;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.it-prices__info-subtitle {
+  color: #A0B0B9;
+  font-size: 14px;
+  text-align: center;
+}
+
 
 
 
