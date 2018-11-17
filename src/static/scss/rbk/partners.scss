@@ -4,9 +4,10 @@
 
 
 .it-partners {
-  margin-bottom: 30px;
+  padding-bottom: 30px;
   padding-top: 20px;
   position: relative;
+  overflow: hidden;
   @include phones {
     display: none;
   }

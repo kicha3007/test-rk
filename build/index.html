@@ -62,8 +62,11 @@
                   </div>
                 </div>
                 <div class="it-main-form__buttons-wrap">
-                  <div class="it-main-form__buttons"><a class="it-btn it-main-form__btn" href=""><span class="it-main-form__btn-text">	Найти билеты</span>
-                      <div class="it-main-form__btn-img-box"><img class="it-main-form__btn-img" src="static/img/rbk/main-form/aero.png" alt=""></div></a></div>
+                  <div class="it-main-form__buttons">
+                    <button class="it-btn it-main-form__btn"><span class="it-main-form__btn-text">	Найти билеты</span>
+                      <div class="it-main-form__btn-img-box"><img class="it-main-form__btn-img" src="static/img/rbk/main-form/aero.png" alt=""></div>
+                    </button>
+                  </div>
                 </div>
                 <!--.it-checkbox-wrap.it-main-form__checkbox-wrap-->
                 <!--	label.it-checkbox-->
@@ -364,7 +367,37 @@
             </ul>
           </div>
         </section>
-        <section class="it-social"></section>
+        <section class="it-social">
+          <div class="it-container container">
+            <div class="it-social__wrap row">
+              <div class="it-social__half it-social__half--left col-md-5 col-sm-12">
+                <div class="it-social__text">
+                  <div class="it-social__title">	Хотите знать всё о скидках на авиабилеты?</div>
+                  <div class="it-social__desc">	Вы можете подписаться на нашу рассылку<br>	через соцсети или по электронной почте.</div>
+                </div>
+              </div>
+              <div class="it-social__half it-social__half--right col-md-7 col-sm-12">
+                <ul class="it-social__list">
+                  <li class="it-social__item"><a class="it-social__link" target="_blank" href="">
+                      <div class="it-social__img-box"><img class="it-social__img" src="static/img/rbk/social/icon/tw.png" alt=""></div></a></li>
+                  <li class="it-social__item"><a class="it-social__link" target="_blank" href="">
+                      <div class="it-social__img-box"><img class="it-social__img" src="static/img/rbk/social/icon/fb.png" alt=""></div></a></li>
+                  <li class="it-social__item"><a class="it-social__link" target="_blank" href="">
+                      <div class="it-social__img-box"><img class="it-social__img" src="static/img/rbk/social/icon/vk.png" alt=""></div></a></li>
+                  <li class="it-social__item"><a class="it-social__link" target="_blank" href="">
+                      <div class="it-social__img-box it-social__img-box--indent"><img class="it-social__img" src="static/img/rbk/social/icon/rss.png" alt=""></div></a></li>
+                </ul>
+                <form class="it-social__form" action="" method="post">
+                  <div class="it-social__form-wrap">
+                    <input class="it-social__form-input" type="email" name="social-email" maxlength="200" value="" placeholder="Ваш email" required>
+                    <button class="it-social__form-btn it-btn">Подписаться</button>
+                    <div class="it-form__success">Спасибо!<br> Вы успешно подписаны!</div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
         <!--include anadolu/header-->
         <!--include anadolu/header-->
         <!--include anadolu/base-offer-->
