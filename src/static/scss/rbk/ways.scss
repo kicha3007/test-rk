@@ -65,13 +65,6 @@
   max-width: 110px
 }
 
-
-
-.it-ways__decoration-title-text {
-
-}
-
-
 .it-ways__nav {
   margin-bottom: 55px;
 
@@ -91,7 +84,7 @@
 .it-ways__nav-item {
   width: 100%;
   margin: 0 15px 20px;
-  max-width: 90px;
+  max-width: 80px;
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -151,7 +144,11 @@
 
 .it-ways__nav-item.active:after {
 	content: '';
-	display: inline-block;
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    margin-left: -30px;
+	display: block;
 	width: 60px;
 	height: 1px;
     background-color: #00ACE2;
@@ -178,9 +175,6 @@
   padding-left: 0;
   @include row-flex();
   margin-bottom: -35px;
-
-
-
 }
 
 .it-ways__half {
@@ -192,10 +186,14 @@
   border-radius: 12px;
   flex-direction: column;
   justify-content: center;
-
+  background-color: #ffffff;
 }
 
 .it-ways__img-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
   overflow: hidden;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
@@ -224,6 +222,8 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  margin-bottom: -10px;
+  padding-right: 10px;
 
 }
 
@@ -236,14 +236,22 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-right: 18px;
+  margin: 0 18px 10px 0;
 }
+
 
 .it-ways__bottom-img {
   display: block;
   max-width: 100%;
   width: 100%;
   height: auto;
+}
+
+.it-ways__bottom-info {
+  margin-bottom: 10px;
+  @include laptop {
+    width: 100%;
+  }
 }
 
 .it-ways__bottom-city {
@@ -262,6 +270,9 @@
 .it-ways__bottom-price {
   text-align: right;
   margin-bottom: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .it-ways__bottom-date {
@@ -271,9 +282,18 @@
   color: #A0B0B9;
 }
 
+.it-ways__bottom-price-inner-wrap {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .it-ways__bottom-price span {
   color: #00BAE8;
   font-size: 22px;
+}
+
+.it-ways__bottom-price-number {
+  margin: 0 5px;
 }
 
 
