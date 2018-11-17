@@ -67,6 +67,7 @@
 
 .it-ways__nav {
   margin-bottom: 55px;
+  overflow: hidden;
 
 }
 
@@ -74,11 +75,16 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 0 -20px;
+  margin: 0 -15px -20px;
   list-style-type: none;
   counter-reset: advantages-seoCounter;
   padding-left: 0;
   overflow: hidden;
+  @include tablets {
+    margin-left: -6px;
+    margin-right: -6px;
+    justify-content: space-between;
+  }
 }
 
 .it-ways__nav-item {
@@ -90,6 +96,10 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
+  @include tablets {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
 }
 
 .it-ways__nav-btn {
@@ -145,7 +155,7 @@
 .it-ways__nav-item.active:after {
 	content: '';
     position: absolute;
-    bottom: -1px;
+    bottom: 0;
     left: 50%;
     margin-left: -30px;
 	display: block;
@@ -164,9 +174,11 @@
 
 
 .it-ways__list {
-  margin: 0;
   padding: 0;
   margin-bottom: 95px;
+  @include phones {
+    margin-bottom: 45px;
+  }
 }
 
 .it-ways__item {
@@ -187,17 +199,31 @@
   flex-direction: column;
   justify-content: center;
   background-color: #ffffff;
+  text-decoration: none;
+}
+
+.it-ways__half:hover {
+
+	text-decoration: none;
+}
+
+.it-ways__half:active,
+.it-ways__half:visited {
+	text-decoration: none;
 }
 
 .it-ways__img-box {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   overflow: hidden;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
-  min-height: 211px;
+  max-height: 211px;
+  @include phones {
+    max-height: 126px;
+  }
 }
 
 .it-ways__bottom {
@@ -209,6 +235,9 @@
   border-bottom-right-radius: 12px;
   display: flex;
   flex-wrap: wrap;
+  @include phones {
+    padding: 17px 15px;
+  }
 
 
 
@@ -237,6 +266,9 @@
   justify-content: center;
   align-items: center;
   margin: 0 18px 10px 0;
+  @include phones {
+    display: none;
+  }
 }
 
 
@@ -262,6 +294,9 @@
   font-weight: 700;
   font-size: 22px;
   margin-bottom: 6px;
+  @include phones {
+    font-size: 16px;
+  }
 }
 
 .it-ways__bottom-country {
@@ -293,6 +328,9 @@
 .it-ways__bottom-price span {
   color: #00BAE8;
   font-size: 22px;
+  @include phones {
+    font-size: 14px;
+  }
 }
 
 .it-ways__bottom-price-number {
