@@ -1,8 +1,5 @@
 /* ****************************** accordion ****************************** */
-
-
-
-$(function () {
+function startCarousel() {
 
     $('[data-owl-carousel]').each(function () {
         var $this = $(this);
@@ -41,6 +38,12 @@ $(function () {
         });
     });
 
+}
+
+
+$(function () {
+
+    startCarousel();
 
     /* ------------------- fancybox ------------------- */
 
@@ -117,11 +120,8 @@ $(function () {
 
             var dataValue = $(dataTabValue).addClass("active");
 
-            var pos = $(dataValue).position();
 
         });
-
-
 
 
     /* ------------------- mask ------------------- */
@@ -171,5 +171,22 @@ $(function () {
     });
 
 
+    var cityChange = $("[data-it-change-city]");
+    var cityFrom = $("[data-it-city-from]");
+    var cityTo = $("[data-it-city-to]");
+
+    cityChange.on("click", function(){
+        var cityFromVal = cityFrom.val();
+        cityFrom.data("it-city-from", cityFromVal);
+        var cityFromData = cityFrom.data("it-city-from");
+
+
+        var cityToVal = cityTo.val();
+        cityTo.data("it-city-to", cityToVal);
+        var cityToData = cityTo.data("it-city-to");
+
+        cityFrom.val(cityToData);
+        cityTo.val(cityFromData);
+    });
 
 });

@@ -14,14 +14,14 @@ section.it-main-form
 			form.it-main-form__form(action="", method="post")
 				.it-main-form__input-wrap
 					.it-main-form__half
-						input.it-main-form__input.it-main-form__input--color-1.it-main-form__input--border-desktop-1(type="text" name='city-from', maxlength='200', value='Москва', placeholder='Москва', required)
-						.it-main-form__city-change
+						input.it-main-form__input.it-main-form__input--color-1.it-main-form__input--border-desktop-1(type="text" name='city-from', maxlength='200', value='Москва', placeholder='Москва', required data-it-city-from="")
+						.it-main-form__city-change(data-it-change-city)
 							.it-main-form__city-change-text
 								|	MOW
 							.it-main-form__city-change-img-box
 								img(src="static/img/rbk/main-form/arrow.png", alt='').it-main-form__city-change-img
 					.it-main-form__half.it-main-form__half--size-basis-2
-						input.it-main-form__input.it-main-form__input--border-laptop-1(type="text" name='city-to', maxlength='200', value='', placeholder='Город прибытия', required)
+						input.it-main-form__input.it-main-form__input--border-laptop-1(type="text" name='city-to', maxlength='200', value='Тюмень', placeholder='Город прибытия', required data-it-city-to="")
 					.it-main-form__half.it-main-form__half--size-1.it-main-form__half--size-basis-1
 						input.it-main-form__input.it-main-form__input--border-laptop-2.datepicker-here#city-to(type="text" name='time-to', maxlength='200', value='', placeholder='Туда', required)
 						label(for='city-to').it-main-form__date-change

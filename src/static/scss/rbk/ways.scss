@@ -35,7 +35,6 @@
   border: none;
   max-width: 100%;
   display: inline-block;
-  background-color: rgba(249, 252, 255, 1);
 
 }
 
@@ -188,6 +187,11 @@
   @include row-flex();
   margin-bottom: -35px;
 }
+
+.it-ways__item:not(.active) {
+  display: none;
+}
+
 
 .it-ways__half {
   @include col();
