@@ -48,12 +48,12 @@
 	display: block;
 	position: absolute;
 	top: 0;
-	right: 6%;
+	right: 3%;
 	width: 1px;
 	height: 100%;
 	background: url("../img/rbk/prices/line.png") 0 0 repeat ;
   @include laptop {
-    right: 4%;
+    right: 1%;
   }
   @include tablets {
     position: static;
@@ -65,6 +65,10 @@
     height: 1px;
     background: url("../img/rbk/prices/line2.png") 0 0 repeat ;
   }
+}
+
+.it-prices__inner-wrap {
+  margin-bottom: 15px;
 }
 
 .it-prices__inner-wrap:last-child {
@@ -119,6 +123,8 @@
   font-weight: 500;
   text-transform: uppercase;
 }
+
+
 
 .it-prices__price-inner-wrap span {
   color: #00BAE8;
