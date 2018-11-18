@@ -40,7 +40,6 @@ function startCarousel() {
 
 }
 
-
 $(function () {
 
     startCarousel();
@@ -75,37 +74,28 @@ $(function () {
 
     /* ------------------- switcher ------------------- */
 
-        var tabButton = $("[data-switch]");
 
-        tabButton.on("click", function (e) {
-            e.preventDefault();
-            e.stopPropagation();
+    var tabButton = $("[data-switch]");
 
-            $(this).closest("[data-switch-wrap]").find(".active").removeClass("active");
-            $(this).parent().addClass("active");
+    tabButton.on("click", function (e) {
+        e.preventDefault();
+        e.stopPropagation();
 
-            var target = $(this).data("switch");
+        $(this).closest("[data-switch-wrap]").find(".active").removeClass("active");
+        $(this).parent().addClass("active");
 
-            var dataTabValue = ("[data-tab='" + target + "']");
-            $(dataTabValue).closest("[data-tabs-wrap]").find(".active").removeClass("active");
-        });
+        var target = $(this).data("switch");
 
+        var dataTabValue = ("[data-tab='" + target + "']");
 
-    /* ****************************** dropdown-menu ****************************** */
+        $(dataTabValue).closest("[data-tabs-wrap]").find(".active").removeClass("active");
 
-    var $trigger = $('[data-trigger]');
+        var dataValue = $(dataTabValue).addClass("active");
 
-    $trigger.on("click", function () {
-        var $this = $(this);
-        $this.toggleClass('active');
-        var triggerName = $this.data("trigger");
-        var $nav = $("[data-it-nav='" + triggerName + "']");
-        $nav.slideToggle(600, function () {
-            if ($(this).css("display") === "none") {
-                $(this).removeAttr("style");
-            }
-        });
+        var pos = $(dataValue).position();
     });
+
+
 
 
     /* ****************************** change-city ****************************** */
@@ -130,6 +120,7 @@ $(function () {
     });
 
 
+    /* ****************************** city-width-input ****************************** */
 
 
     var $input = $('[data-it-city]'),
