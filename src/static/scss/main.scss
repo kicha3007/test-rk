@@ -3,7 +3,7 @@
 @import "smart-grid";
 @import "base";
 
-@include font-face(LucidaGrande, "../fonts/LucidaGrande.ttf", 400);
+@include font-face(LucidaGrande, "../fonts/LucidaGrande", 400, normal, ttf);
 
 /******************* rbk *******************/
 
