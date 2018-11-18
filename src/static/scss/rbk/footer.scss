@@ -1,3 +1,8 @@
 @import "../__vars";
 @import "../__mixins";
 @import "../smart-grid";
+
+.it-footer {
+  flex: 0 0 auto;
+  padding-top: 40px;
+}
