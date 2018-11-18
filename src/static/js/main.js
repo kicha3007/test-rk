@@ -136,6 +136,7 @@ $(function () {
     $input.focusout(function () {
         if ($buffer.text() === "" ) {
             $input.css("width", "110px");
+            cityInputChangeButton.css("position", "static");
         }
     });
 
