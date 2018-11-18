@@ -82,7 +82,6 @@
   list-style-type: none;
   padding-left: 0;
   margin: 0 12px 14px;
-
 }
 
 .it-footer__social-link {
@@ -111,10 +110,6 @@
 }
 
 .it-footer__social-img-box {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  transition: .2s;
   width: 16px;
   height: 16px;
   overflow: hidden;
@@ -140,7 +135,6 @@
   top: 0;
   left: 0;
   opacity: 0;
-
 }
 
 .it-footer__social-link:hover .it-footer__social-img {

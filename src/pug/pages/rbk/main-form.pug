@@ -23,13 +23,13 @@ section.it-main-form
 					.it-main-form__half.it-main-form__half--size-basis-2
 						input.it-main-form__input.it-main-form__input--border-laptop-1(type="text" name='city-to', maxlength='200', value='', placeholder='Город прибытия', required)
 					.it-main-form__half.it-main-form__half--size-1.it-main-form__half--size-basis-1
-						input.it-main-form__input.it-main-form__input--border-laptop-2(type="text" name='time-to', maxlength='200', value='', placeholder='Туда', required)
-						.it-main-form__date-change
+						input.it-main-form__input.it-main-form__input--border-laptop-2.datepicker-here#city-to(type="text" name='time-to', maxlength='200', value='', placeholder='Туда', required)
+						label(for='city-to').it-main-form__date-change
 							.it-main-form__date-change-img-box
 								img(src="static/img/rbk/main-form/date.png", alt='').it-main-form__city-change-img
 					.it-main-form__half.it-main-form__half--size-1.it-main-form__half--size-basis-1
-						input.it-main-form__input(type="text" name='time-back', maxlength='200', value='', placeholder='Обратно', required)
-						.it-main-form__date-change
+						input.it-main-form__input.datepicker-here#city-from(type="text" name='time-back', maxlength='200', value='', placeholder='Обратно', required)
+						label(for='city-from').it-main-form__date-change
 							.it-main-form__date-change-img-box
 								img(src="static/img/rbk/main-form/date.png", alt='').it-main-form__city-change-img
 					.it-main-form__half.it-main-form__half--size-2
@@ -66,14 +66,3 @@ section.it-main-form
 								|	Найти билеты
 							.it-main-form__btn-img-box
 								img(src="static/img/rbk/main-form/aero.png", alt='').it-main-form__btn-img
-
-				//.it-checkbox-wrap.it-main-form__checkbox-wrap
-				//	label.it-checkbox
-				//		input.it-checkbox__default(type="checkbox" name="AGREE" checked)
-				//		span.it-checkbox__pseudo
-				//		span.it-checkbox__text
-				//			|	Я согласен на обработку персональных данных
-				//	.it-form__success
-				//		| Спасибо!
-				//		br
-				//		|  Ваша заявка принята.
