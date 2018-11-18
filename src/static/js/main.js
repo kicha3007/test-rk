@@ -131,7 +131,12 @@ $(function () {
         $buffer.text($input.val());
         $input.width($buffer.width());
         cityInputChangeButton.css("position", "absolute");
+    });
 
+    $input.focusout(function () {
+        if ($buffer.text() === "" ) {
+            $input.css("width", "110px");
+        }
     });
 
 
