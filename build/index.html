@@ -79,14 +79,15 @@
               <div class="it-ways__decoration-img-box"><img class="it-ways__decoration-img" src="static/img/rbk/ways/decoration.png" alt=""></div>
             </div>
             <h2 class="it-all-title">Популярные направления перелетов<br>из города
-              <div class="it-ways__change-city">
+              <form class="it-ways__change-city" action="" method="">
                 <div class="it-ways__change-city-input-wrap">
-                  <input class="it-ways__change-city-input" id="change-city" type="text" name="city-change" maxlength="200" value="" placeholder="Москва" required>
+                  <input class="it-ways__change-city-input" id="change-city" type="text" name="city-change" maxlength="200" value="" placeholder="Москва" required data-it-city>
+                  <div class="it-ways__change-city-input-buffer" data-it-city-buffer></div>
                 </div>
-                <label class="it-ways__change-city-label" for="change-city">
+                <label class="it-ways__change-city-label" for="change-city" data-it-city-input-change>
                   <div class="it-ways__change-city-img-box"><img class="it-ways__change-city-img" src="static/img/rbk/ways/pen.png" alt=""></div>
                 </label>
-              </div>
+              </form>
             </h2>
             <div class="it-ways__wrap">
               <div class="it-ways__nav">

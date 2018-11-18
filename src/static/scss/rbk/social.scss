@@ -16,6 +16,10 @@
 
 }
 
+.it-social__wrap {
+  max-width: 100%;
+}
+
 .it-social__title {
   color: #5C5C5C;
   font-size: 16px;
@@ -92,8 +96,10 @@
 .it-social__form {
   max-width: 330px;
   width: 100%;
-  flex-basis: 200px;
   flex-grow: 1;
+  @include laptop {
+    flex-basis: 200px;
+  }
 
 }
 
@@ -102,6 +108,8 @@
   flex-wrap: wrap;
   justify-content: flex-end;
   align-items: flex-start;
+
+
   @include tablets {
     justify-content: center;
   }

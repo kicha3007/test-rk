@@ -45,34 +45,6 @@ $(function () {
 
     startCarousel();
 
-    /* ------------------- fancybox ------------------- */
-
-    $("[data-fancybox]").fancybox({
-        padding: 0,
-        helpers: {
-            overlay: {
-                locked: false
-            }
-        }
-    });
-
-
-    var $accordItem = $("[data-it-accord-item]");
-    var $accordToggle = $("[data-it-accord-toggle]");
-
-    $accordItem.hide();
-    $accordToggle.on("click", function () {
-        var x = this;
-        if ($(this).next($accordItem).css("display") === "none") {
-            $(this).closest("[data-it-accord-wrap]").find("[data-it-accord-item]").fadeOut(500);
-            $(this).closest("[data-it-accord-wrap]").find("[data-it-sign]").removeClass("active");
-        }
-
-        $(this).next($accordItem).slideToggle(200, function () {
-        });
-        $(this).parent().find("[data-it-sign]").toggleClass("active");
-    });
-
 
     /* ------------------- ajax ------------------- */
 
@@ -115,18 +87,8 @@ $(function () {
             var target = $(this).data("switch");
 
             var dataTabValue = ("[data-tab='" + target + "']");
-
             $(dataTabValue).closest("[data-tabs-wrap]").find(".active").removeClass("active");
-
-            var dataValue = $(dataTabValue).addClass("active");
-
-
         });
-
-
-    /* ------------------- mask ------------------- */
-
-    $("[data-phone]").mask("+7 (999) 99-99-999");
 
 
     /* ****************************** dropdown-menu ****************************** */
@@ -146,29 +108,7 @@ $(function () {
     });
 
 
-    /* ------------------- show-more ------------------- */
-
-    var showMoreButtonText = $("[data-show-more-button]");
-
-    $("[data-it-accord-wrap-item]").hide();
-
-    showMoreButtonText.on("click", function (e) {
-        e.preventDefault();
-
-        var $this = $(this);
-
-        var showMoreButtonCloseText = $this.data("showMoreButton");
-        var showMoreButtonCloseTextToButton = $this.children("[data-show-more-text]").text();
-
-        $this.children("[data-show-more-text]").text(showMoreButtonCloseText);
-        $this.data("showMoreButton", showMoreButtonCloseTextToButton);
-
-        var showMoreButtonValue = $this.data("showMoreButton");
-        var showMoreText = $this.data("showBlock");
-        $("[" + showMoreText + "]").slideToggle();
-        $this.toggleClass("active");
-
-    });
+    /* ****************************** change-city ****************************** */
 
 
     var cityChange = $("[data-it-change-city]");
@@ -188,5 +128,20 @@ $(function () {
         cityFrom.val(cityToData);
         cityTo.val(cityFromData);
     });
+
+
+
+
+    var $input = $('[data-it-city]'),
+        $buffer = $('[data-it-city-buffer]'),
+        cityInputChangeButton = $("[data-it-city-input-change]");
+
+    $input.on('input', function() {
+        $buffer.text($input.val());
+        $input.width($buffer.width());
+        cityInputChangeButton.css("position", "absolute");
+
+    });
+
 
 });

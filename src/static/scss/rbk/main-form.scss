@@ -214,14 +214,6 @@
 
 }
 
-//.it-main-form__half-part {
-//  display: flex;
-//  flex-wrap: wrap;
-//  max-width: 368px;
-//  width: 100%;
-//  flex-grow: 1;
-//  flex-basis: 100px;
-//}
 
 .it-main-form__passanger-input-wrap:before {
   content: '';
@@ -286,6 +278,7 @@
   left: -99999px;
   flex-basis: 90px;
   display: flex;
+
   flex-wrap: wrap;
 }
 
@@ -416,7 +409,7 @@
 .it-btn.it-main-form__btn {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 

@@ -58,6 +58,7 @@
   margin: 0;
   overflow: hidden;
   font-weight: 700;
+  min-height: 2px;
 
   @include tablets {
     padding-top: 50px;
