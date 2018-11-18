@@ -35,6 +35,12 @@
 
 .it-container--big {
   max-width: 1246px;
+  @include tablets {
+    max-width: 100%;
+  }
+  @include phones {
+    max-width: 100%;
+  }
 }
 
 .it-container * {
