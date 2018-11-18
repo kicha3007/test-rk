@@ -175,6 +175,9 @@
   @include tablets {
     justify-content: flex-start;
   }
+  @include phones {
+    justify-content: center;
+  }
 }
 
 
